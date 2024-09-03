@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fetch(){
+        var get=document.getElementById("get").value;
+        document.getElementById("put").value=get;
+    }
+</script>
+<body>
+    <form >
+        <label>Range(2 to 10):</label>
+        <input type="range" min="2" max="10" id="get" step="0.2" onchange="fetch()">
+        <input type="text" id="put">
+        <input type="submit">
+    </form>
+</body>
+</html>
